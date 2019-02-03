@@ -1,4 +1,3 @@
-
 import pymysql
 
 class MySQLDB():
@@ -33,7 +32,6 @@ class MySQLDB():
         except:
             # 如果发生错误则回滚
             self.mydb.rollback()
-
 
     def __del__(self):
         # 关闭数据库连接
